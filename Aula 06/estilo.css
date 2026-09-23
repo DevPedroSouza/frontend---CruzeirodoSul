@@ -1,0 +1,35 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #396c6e;
+    text-align: center;
+}
+
+h1{
+    color: #00fff2ab;
+    padding: 5px;
+    text-align: center;
+}
+
+h2{
+    color: rgb(1, 115, 216);
+    font-style: oblique;
+    text-align: center;
+}
+section{
+    background-color: #fff;
+    border: 3px solid #000000;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    max-width: 500px;
+    text-align: center;
+}
+
+p{
+    font-size: 20px;
+}
+
+a{
+    color:#396c6e;
+    font-weight: bold;
+}
