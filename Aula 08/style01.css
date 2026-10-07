@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: #fffdfd;
+    color: #050505;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Organização geral*/
+
+.layout-pagina{
+    display: grid;
+    
+    grid-template-areas: 
+    "header header"
+    "sidebar main"
+    "footer footer"   
+    ;
+
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: auto 1fr auto;
+
+    min-height: 100vh;
+}
+
+/*CABEÇALHO*/
+
+.cabecalho{
+    grid-area: header;
+
+    background-color: #6d6c6c;
+    color: rgb(252, 251, 251);
+    padding: 25px;
+    text-align: center;
+}
+
+.cabecalho h1{
+    margin: 0 0 10px;
+}
+
+.cabecalho p{
+    margin: 0;
+}
+
+/*Menu lateral esquerda*/
+
+.barra-leteral{
+    grid-area: sidebar;
+
+    background-color: #6f7e8f;
+    padding: 20px;
+}
+
+.barra-leteral h2{
+    color: rgb(51, 50, 110);
+}
+
+.barra-leteral ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.barra-leteral li{
+    margin-bottom: 10px;
+}
+
+.barra-leteral a{
+    display: block;
+    background-color: #ffffff;
+    color: #235754;
+    padding: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.barra-leteral a:hover{
+    background-color: rgb(255, 0, 0);
+}
+
+/*Grid dos cards*/
+
+.grid-principal{
+    grid-area: main;
+    padding: 30px;
+}
+
+.grid-principal h2{
+    margin-top: 0;
+    color: #095385;
+}
+
+.grid-cards {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 2rem;
+}
+
+.card{
+    background-color: rgb(245, 248, 250);
+    padding: 1rem;
+    border: 1px solid #4b2b69;
+    box-shadow: 0 3px  8px #0753f7;
+}
+
+.card h3{
+    margin-top: 0;
+    color: #172358;
+}
+
+.card p{
+    line-height: 1.5;
+}
+
+.card a{
+    display: inline-block;
+    background-color: #080707;
+    color: #fdfbff;
+    padding: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.card a:hover{
+    background-color: aquamarine;
+}
+
+/*Rodapé*/
+
+.card-footer{
+    grid-area: footer;
+
+    background-color: #a0a09f;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
