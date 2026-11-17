@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áudio</title>
+    <style>
+        body {
+            background-color: #e5e9e6;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        audio { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de áudio</h1>
+    <audio id="meu-audio" controls loop>
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <script>
+        const audio = document.getElementById("meu-audio");
+
+        audio.addEventListener("play", () => console.log("O áudio começou a tocar."));
+        audio.addEventListener("pause", () => console.log("O áudio foi pausado."));
+        audio.addEventListener("ended", () => console.log("O áudio terminou."));
+    </script>
+</body>
+</html>
